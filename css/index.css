@@ -145,8 +145,12 @@ footer{
 /* Medaia Queries */
 /* ===================================== */
 
+
+
+
 /* Tbalet view */
-@media screen and (max-width: 800px){
+
+@media screen and (max-width: 800px) and (min-width: 501px){
 	
 	/* Navigation */
 	.navigation-container{
@@ -181,5 +185,79 @@ footer{
 	.main-content,
 	address{
 		padding: 0 10px;
+	}
+
+}
+
+/* Mobile View */
+
+@media (max-width: 500px) {
+
+	body{
+		width: 450px;
+		/* overflow-x: hidden; */
+	}
+
+	.navigation-container{
+		flex-wrap: wrap;
+	}
+	.navbar {
+		flex-direction: column;
+		order: 1;
+		width: 100%;
+	}	
+
+	.navbar a {
+		border-bottom: 1px solid gray;
+		width: 100%;
+		text-align: center;
+	}
+
+	.navbar a:first-child{
+		border-top: 1px solid gray;
+	}
+
+	.logo-container{
+		/* border: 2px solid red; */
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		margin-bottom: 20px;
+	}
+
+	.showcase{
+		justify-content: center;
+	}
+
+	.header-text-container{
+		margin: 0;
+	}
+
+	.showcase .header-img-container{
+		display: none;
+	}
+
+	.main-content{
+		padding: 0 10px;
+	}
+
+	.two-features,
+	.three-features{
+		flex-direction: column;
+	}
+
+	.main-content h2{
+		font-size: 16px;
+	}
+
+	.two-features section,
+	.three-features section {
+		width: 100%;
+	}
+
+	.two-features section:first-child,
+	.three-features .services-section,
+	.three-features .product-seciton {
+		margin-bottom: 30px;
 	}
 }
