@@ -144,3 +144,42 @@ footer{
 /* ===================================== */
 /* Medaia Queries */
 /* ===================================== */
+
+/* Tbalet view */
+@media screen and (max-width: 800px){
+	
+	/* Navigation */
+	.navigation-container{
+		flex-wrap: wrap-reverse;
+	}
+	
+	.navbar {
+		width: 100%;
+		justify-content: space-around;
+	}
+
+	.logo-container{
+		/* border: 2px solid red; */
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		margin-bottom: 20px;
+	}
+
+	.showcase{
+		justify-content: center;
+	}
+
+	.header-text-container{
+		margin: 0;
+	}
+
+	.showcase .header-img-container{
+		display: none;
+	}
+
+	.main-content,
+	address{
+		padding: 0 10px;
+	}
+}
