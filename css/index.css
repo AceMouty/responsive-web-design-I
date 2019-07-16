@@ -1,3 +1,267 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+/* Basic styling */
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
 
+html, body {
+	height: 100%;
+	font-family: 'Titillium Web', sans-serif;
+}
+
+body{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5 {
+	font-family: 'Bangers', cursive;
+	letter-spacing: 1px;
+	margin-bottom: 15px;
+}
+
+hr{
+	border: none;
+	height: 2px;
+	color: black;
+	background-color: black;
+}
+
+/* =============================== */
+/* Desktop view (1,000px) */
+/* =============================== */
+
+/* Navigation */
+
+.navigation-container {
+	/* border: 2px solid red; */
+	display: flex;
+	justify-content: space-between;
+	padding: 20px 0;
+}
+
+.navbar{
+	/* border: 2px solid red; */
+	width: 70%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.navbar a{
+	text-decoration: none;
+	font-size: 18px;
+	color: gray;
+}
+
+/* Showcase */
+
+.showcase{
+	/* border: 2px solid red; */
+	display: flex;
+	justify-content: space-around;
+	margin: 70px 0;
+}
+
+.header-text-container{
+	/* border: 2px solid red; */
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-right: 15%;
+}
+
+.header-text{
+	font-size: 40px;
+}
+
+.header-text-container a{
+	border: 2px solid black;
+	display: inline-block;
+	width: 70%;
+	padding: 10px;
+	text-decoration: none;
+	color: black;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.header-text-container a:hover{
+	border-color: grey;
+	color: grey;
+}
+
+/* Features Section */
+
+.two-features{
+	display: flex;
+	justify-content: space-between;
+	margin: 30px 0px;
+}
+
+.two-features section{
+	width: 45%;
+}
+
+.main-content-img-container img{
+	width: 100%;
+}
+
+.three-features {
+	display: flex;
+	justify-content: space-between;
+	margin: 30px 0; 
+}
+
+.three-features section {
+	width: 30%;
+}
+
+address{
+	margin: 30px 0;
+}
+
+address a{
+	display: block;
+	text-decoration: none;
+	color: black;
+	margin-top: 10px;
+}
+
+footer{
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+
+
+
+/* ===================================== */
+/* ===================================== */
+/* Medaia Queries */
+/* ===================================== */
+
+
+
+
+/* Tbalet view */
+
+@media screen and (max-width: 800px) and (min-width: 501px){
+	
+	body{
+		width: 750px;
+	}
+
+	/* Navigation */
+	.navigation-container{
+		flex-wrap: wrap-reverse;
+	}
+	
+	.navbar {
+		width: 100%;
+		justify-content: space-around;
+	}
+
+	.logo-container{
+		/* border: 2px solid red; */
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		margin-bottom: 20px;
+	}
+
+	.showcase{
+		justify-content: center;
+	}
+
+	.header-text-container{
+		margin: 0;
+	}
+
+	.showcase .header-img-container{
+		display: none;
+	}
+
+	.main-content,
+	address{
+		padding: 0 10px;
+	}
+
+}
+
+/* Mobile View */
+
+@media (max-width: 500px) {
+
+	body{
+		width: 450px;
+		/* overflow-x: hidden; */
+	}
+
+	.navigation-container{
+		flex-wrap: wrap;
+	}
+	.navbar {
+		flex-direction: column;
+		order: 1;
+		width: 100%;
+	}	
+
+	.navbar a {
+		border-bottom: 1px solid gray;
+		width: 100%;
+		text-align: center;
+	}
+
+	.navbar a:first-child{
+		border-top: 1px solid gray;
+	}
+
+	.logo-container{
+		/* border: 2px solid red; */
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		margin-bottom: 20px;
+	}
+
+	.showcase{
+		justify-content: center;
+	}
+
+	.header-text-container{
+		margin: 0;
+	}
+
+	.showcase .header-img-container{
+		display: none;
+	}
+
+	.main-content{
+		padding: 0 10px;
+	}
+
+	.two-features,
+	.three-features{
+		flex-direction: column;
+	}
+
+	.main-content h2{
+		font-size: 16px;
+	}
+
+	.two-features section,
+	.three-features section {
+		width: 100%;
+	}
+
+	.two-features section:first-child,
+	.three-features .services-section,
+	.three-features .product-seciton {
+		margin-bottom: 30px;
+	}
+}
