@@ -12,7 +12,7 @@ a {
 }
 
 body{
-  max-width: 900px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -73,3 +73,53 @@ body{
 }
 
 
+/* Middle seciton */
+#middle{
+  border-top: 4px solid black;
+  border-bottom: 4px solid black;
+  padding: 5% 0;
+}
+
+#middle-top-container,
+#middle-bottom-container{
+  display: flex;
+  justify-content: space-between;
+}
+
+#middle-image-container{
+  padding: 5% 0;
+}
+
+#middle-image-container img{
+  min-width: 100%;
+}
+
+#features,
+#about{
+  width: 48%;
+}
+
+#service-container,
+#product-container,
+#vision-container{
+  /* border: 2px solid red; */
+  width: 32%;
+}
+
+footer{
+  padding-top: 2%;
+}
+
+.contact-info address{
+  margin-top: 2%;
+}
+
+.contact-info .phone-number{
+  margin: 2% 0;
+}
+
+ .copy-right{
+  display: flex;
+  justify-content: center;
+  padding: 3% 0;
+}
