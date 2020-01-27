@@ -1,3 +1,36 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+body{
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Navigation */
+.nav-container{
+  /* border: 2px solid red; */
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-container nav{
+  /* border: 2px solid orange; */
+  padding: 1%;
+  width: 65%;
+  display: flex;
+  justify-content: space-between;
+}
+
+
 
