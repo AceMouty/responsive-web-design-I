@@ -91,7 +91,7 @@ body{
 }
 
 #middle-image-container img{
-  min-width: 100%;
+  width: 100%;
 }
 
 #features,
@@ -122,4 +122,70 @@ footer{
   display: flex;
   justify-content: center;
   padding: 3% 0;
+}
+
+/* Mobile view */
+@media(max-width: 500px){
+  
+  body{
+    max-width: 480px;
+    padding: 2%;
+    overflow: auto;
+    
+  }
+  
+  /* Navigation */
+  .nav-container{
+    flex-wrap: wrap-reverse;
+  }
+
+  .logo{
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-container nav{
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 2%;
+  }
+
+  .nav-container nav a{
+    text-align: center;
+    width: 100%;
+    padding: 2%;
+    border-top: 2px solid gray;
+    border-bottom: 2px solid gray;
+  }
+
+  /* CTA */
+  .header .cta{
+    width: 100%;
+  }
+  .header-img-container{
+    display: none;
+  }
+  
+  /* Mid section */
+  #middle-top-container,
+  #middle-bottom-container{
+    flex-wrap: wrap;
+  }
+
+  #middle-top-container #features,
+  #middle-top-container #about,
+  #middle-bottom-container #service-container,
+  #middle-bottom-container #product-container,
+  #middle-bottom-container #vision-container{
+    width: 100%;
+  }
+
+  #middle-top-container #about{
+    padding-top: 5%;
+  }
+
+  #middle-bottom-container #product-container{
+    padding: 5% 0;
+  }
+
 }
